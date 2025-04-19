@@ -8,7 +8,8 @@ public:
 	void Search(std::string _sSearchContext, float _fScore = NULL);
 	void Print();
 	void PrintReverse();
+
 private:
-	Student* pHead = nullptr;
-	Student* pTail = nullptr;
+	Student* m_pHead = nullptr;
+	Student* m_pTail = nullptr;
 };

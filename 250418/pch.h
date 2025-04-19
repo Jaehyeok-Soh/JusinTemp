@@ -7,6 +7,12 @@
 #ifndef PCH_H
 #define PCH_H
 
+#include <iostream>
+#include <string>
+#include "Student.h"
+#include "StudentList.h"
+#include "Define.h"
+using namespace std;
 // add headers that you want to pre-compile here
 
 #endif //PCH_H
