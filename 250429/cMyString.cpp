@@ -35,6 +35,12 @@ cMyString& cMyString::operator=(const char* _pCstr)
 	return *this;
 }
 
+cMyString& cMyString::operator=(cMyString& _pStr)
+{
+	Init(m_pCstr);
+	return *this;
+}
+
 cMyString& cMyString::operator+(const char* _pCstr)
 {
 	//m_pCstr + _pCstr
@@ -53,6 +59,11 @@ cMyString& cMyString::operator+(const char* _pCstr)
 	m_iSz = totalSz;
 
 	return *this;
+}
+
+cMyString& cMyString::operator+(cMyString& _pStr)
+{
+	// TODO: 여기에 return 문을 삽입합니다.
 }
 
 bool cMyString::operator==(const char* _pCstr)
