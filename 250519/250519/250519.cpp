@@ -178,7 +178,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         //handle, timerID, timerElapse, null << invoke WM_TIMER every elapse
         break;
     case WM_TIMER:
-        InvalidateRect(hWnd, 0, TRUE);
+        InvalidateRect(hWnd, 0, FALSE);
         break;
     case WM_COMMAND:
         {

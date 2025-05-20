@@ -17,8 +17,8 @@ void CPlayer::Initialize()
 
 int CPlayer::Update()
 {
-	__super::Update_Rect();
 	Key_Input();
+	__super::Update_Rect();
 	return 0;
 }
 

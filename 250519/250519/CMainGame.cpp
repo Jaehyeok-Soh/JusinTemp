@@ -68,6 +68,8 @@ void CMainGame::Update()
 
 void CMainGame::Render()
 {
+	Rectangle(m_DC, 0, 0, WINCX, WINCY);
+
 	m_pPlayer->Render(m_DC);
 	if (m_pEnemy)
 	{
